@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+
+# Local database and session files
+cookies.txt
+user2.txt
+
+# Operating system
+.DS_Store
+Thumbs.db
+
+# Build output
+dist/
+coverage/
+!**/.env.example

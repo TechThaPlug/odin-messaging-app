@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1120">
+  <title>Messages — Connect</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/api.js" defer></script>
+  <script src="js/chat.js" defer></script>
+</head>
+<body class="chat-body">
+  <main class="chat-layout">
+    <aside class="sidebar">
+      <header class="sidebar-header">
+        <a class="brand" href="index.html">Connect<span>.</span></a>
+        <button id="logoutBtn" class="logout-btn">Log out</button>
+      </header>
+
+      <div class="current-user" id="currentUser">Loading account...</div>
+
+      <section class="search-section">
+        <h2>Find people</h2>
+        <input id="userSearch" type="search" placeholder="Search usernames..." autocomplete="off">
+        <div id="searchResults" class="search-results"></div>
+      </section>
+
+      <section class="conversation-section">
+        <h2>Your conversations</h2>
+        <div id="conversationList" class="conversation-list">
+          Loading conversations...
+        </div>
+      </section>
+    </aside>
+
+    <section class="chat-main">
+      <header class="chat-header" id="chatHeader">
+        <h2>Welcome to Connect</h2>
+        <p>Select a conversation or find someone to message.</p>
+      </header>
+
+      <div id="messages" class="messages">
+        <div class="empty-chat">
+          <div class="empty-icon">✉</div>
+          <h2>Your conversations start here</h2>
+          <p>Choose someone from the sidebar to get started.</p>
+        </div>
+      </div>
+
+      <form id="messageForm" class="message-form">
+        <input id="messageInput" type="text" maxlength="5000"
+          placeholder="Write a message..." autocomplete="off" disabled required>
+        <button class="btn" id="sendBtn" type="submit" disabled>Send</button>
+      </form>
+      <p id="chatStatus" class="chat-status" role="status"></p>
+    </section>
+  </main>
+</body>
+</html>

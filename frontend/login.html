@@ -1,0 +1,31 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log in — Connect</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/auth.js" defer></script>
+</head>
+<body>
+  <main class="auth-page">
+    <a class="brand" href="index.html">Connect<span>.</span></a>
+    <form class="auth-card" id="loginForm">
+      <h1>Welcome back</h1>
+      <p>Log in to continue your conversations.</p>
+
+      <label for="identifier">Username or email</label>
+      <input id="identifier" name="identifier" required>
+
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" required>
+
+      <button class="btn auth-submit" type="submit">Log in</button>
+      <p id="authMessage" role="status"></p>
+      <p class="auth-switch">New to Connect? <a href="register.html">Create an account</a></p>
+    </form>
+  </main>
+</body>
+</html>
